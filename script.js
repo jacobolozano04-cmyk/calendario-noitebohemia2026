@@ -1,43 +1,31 @@
-/* Estilo básico para calendario Noite Bohemia */
+// ============================
+// Script mínimo para calendario Noite Bohemia
+// ============================
 
-#calendario {
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Arial', sans-serif; /* Puedes cambiar a la tipografía de la compañía si la sabes */
-  color: #222; /* Texto oscuro */
-  background-color: #f8f4f0; /* Fondo claro tipo papel */
-  padding: 20px;
-  border-radius: 10px;
+// Función para ordenar actuaciones por fecha y hora
+function ordenarActuaciones(a, b) {
+  const fechaA = new Date(a.fecha + ' ' + (a.hora || '00:00'));
+  const fechaB = new Date(b.fecha + ' ' + (b.hora || '00:00'));
+  return fechaA - fechaB;
 }
 
-.actuacion {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
+// Cargar actuaciones desde JSON
+fetch('actuaciones.json')
+  .then(response => response.json())
+  .then(data => {
+    const contenedor = document.getElementById('calendario');
+    data.sort(ordenarActuaciones);
+    data.forEach(act => {
+      const div = document.createElement('div');
+      div.className = 'actuacion';
+      div.innerHTML = `
+        <div class="actuacion-fecha">${act.fecha} ${act.hora}</div>
+        <div class="actuacion-titulo">${act.titulo}</div>
+        <div class="actuacion-lugar">${act.lugar}</div>
+      `;
+      contenedor.appendChild(div);
+    });
+  })
+  .catch(err => console.error('Error cargando actuaciones:', err));
 
-.actuacion:last-child {
-  border-bottom: none;
-}
 
-.actuacion-fecha {
-  font-weight: bold;
-  color: #b22222; /* Color rojizo de Noite Bohemia */
-  margin-bottom: 5px;
-}
-
-.actuacion-titulo {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 3px;
-}
-
-.actuacion-lugar {
-  font-style: italic;
-  color: #555;
-}
-
-/* Opcional: efecto hover */
-.actuacion:hover {
-  background-color: #f0e8e0;
-  transition: background-color 0.3s;
-}
