@@ -25,38 +25,86 @@
   },
   {
     "fecha": "2026-03-03",
-    "hora": "20:00",
-    "titulo": "EDIPO REY",
-    "lugar": "Teatro Romano, Mérida"
+    "hora": "12:00",
+    "titulo": "MEDEA",
+    "lugar": "Auditorio Gustavo Freire, Lugo"
   },
   {
     "fecha": "2026-03-03",
-    "hora": "22:00",
-    "titulo": "VACANTES",
-    "lugar": "Teatro Romano, Mérida"
+    "hora": "17:00",
+    "titulo": "EL SORTEO DE CÁSINA",
+    "lugar": "Auditorio Gustavo Freire, Lugo"
   },
   {
     "fecha": "2026-03-10",
-    "hora": "18:30",
-    "titulo": "HÉROES",
-    "lugar": "Teatro Principal, Santiago"
+    "hora": "10:00",
+    "titulo": "MILES GLORIOSUS",
+    "lugar": "Teatro Campos Elíseos, Bilbao"
   },
   {
     "fecha": "2026-03-10",
-    "hora": "20:30",
-    "titulo": "ELEKTRA",
-    "lugar": "Teatro Principal, Santiago"
+    "hora": "12:30",
+    "titulo": "LA CASA DE BERNARDA ALBA",
+    "lugar": "Teatro Campos Elíseos, Bilbao"
   },
   {
-    "fecha": "2026-03-17",
-    "hora": "19:00",
-    "titulo": "PROMETEO",
-    "lugar": "Auditorio Nacional, Madrid"
+    "fecha": "2026-03-10",
+    "hora": "23:59",
+    "titulo": "EDIPO REY",
+    "lugar": "Teatro Campos Elíseos, Bilbao"
   },
   {
-    "fecha": "2026-03-17",
-    "hora": "21:00",
-    "titulo": "ANTÍGONA",
-    "lugar": "Auditorio Nacional, Madrid"
+    "fecha": "2026-03-11",
+    "hora": "10:00",
+    "titulo": "MILES GLORIOSUS",
+    "lugar": "Teatro Campos Elíseos, Bilbao"
+  },
+  {
+    "fecha": "2026-03-11",
+    "hora": "12:30",
+    "titulo": "GEMELOS",
+    "lugar": "Teatro Campos Elíseos, Bilbao"
+  },
+  {
+    "fecha": "2026-03-28",
+    "hora": "20:00",
+    "titulo": "YERMA",
+    "lugar": "Auditorio Municipal de Ribeira"
+  },
+  {
+    "fecha": "2026-04-14",
+    "hora": "12:30",
+    "titulo": "TROYANAS",
+    "lugar": "Teatro Romano de Segóbriga"
+  },
+  {
+    "fecha": "2026-04-14",
+    "hora": "15:30",
+    "titulo": "GEMELOS",
+    "lugar": "Teatro Romano de Segóbriga"
+  },
+  {
+    "fecha": "2026-04-15",
+    "hora": "11:30",
+    "titulo": "HELENA",
+    "lugar": "Teatro Romano de Mérida"
+  },
+  {
+    "fecha": "2026-04-15",
+    "hora": "17:00",
+    "titulo": "ANFITRIÓN",
+    "lugar": "Teatro Romano de Mérida"
+  },
+  {
+    "fecha": "2026-04-22",
+    "hora": "10:00",
+    "titulo": "HELENA",
+    "lugar": "Teatro Jovellanos, Gijón"
+  },
+  {
+    "fecha": "2026-04-22",
+    "hora": "12:00",
+    "titulo": "GEMELOS",
+    "lugar": "Teatro Jovellanos, Gijón"
   }
 ]
